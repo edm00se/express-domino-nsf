@@ -1,0 +1,15 @@
+{
+  "name": "test-node-dom-nsf",
+  "version": "1.0.0",
+  "description": "testing the npm package domino-nsf",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric McCormick",
+  "license": "ISC",
+  "dependencies": {
+    "domino-nsf": "0.0.3",
+    "nan": "^2.2.1"
+  }
+}
