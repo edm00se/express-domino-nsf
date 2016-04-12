@@ -1,6 +1,6 @@
-var domino = require('domino-nsf');
-var db = {server:'',database:'LocalScratchBox.nsf'};
-var view = {view:"SomeForms",category:""};    
+var domino = require('domino-nsf'),
+	db = {server:'',database:'LocalScratchBox.nsf'},
+	view = {view:"SomeForms",category:""};    
 
 domino.initSession();
 
