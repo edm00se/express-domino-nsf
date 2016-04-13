@@ -8,7 +8,14 @@
     "start": "node server.js"
   },
   "author": "Eric McCormick",
-  "license": "ISC",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/edm00se/express-domino-nsf.git"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/edm00se/express-domino-nsf/blob/master/LICENSE.md"
+  },
   "dependencies": {
     "domino-nsf": "0.0.3",
     "express": "^4.13.4",
