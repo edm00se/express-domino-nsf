@@ -6,9 +6,9 @@ function getDocumentByUnid(un,cb){
   domino.getDocumentAsync(db,un,function(err,doc){
     if(!err){
       cb(null,doc);
-      console.log('Error: '+err);
     }else{
       cb(err);
+      console.log('Error: '+err);
     }
   });
 };
@@ -18,9 +18,9 @@ function getViewContents(vw,cb){
   domino.getViewAsync(db,vwOb,function(err,view) {
     if(!err){
       cb(null,view);
-      console.log('Error'+err);
     }else{
       cb(err);
+      console.log('Error: '+err);
     }
   });
 

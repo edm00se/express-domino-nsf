@@ -9,6 +9,6 @@ module.exports = function (app) {
     });
 
     require('./views')(app);
-    require('./doc')(app);
+    require('./docs')(app);
     // add new lines for each other module, or use an array with a forEach
 };

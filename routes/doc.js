@@ -7,13 +7,13 @@ module.exports = function (app) {
      * 
      */
 
-    app.get("/doc", function(req, res, next){
+    app.get("/docs", function(req, res, next){
         res.jsonp({
-            "message": '/doc'
+            "message": '/docs'
         });
     });
     
-    app.get("/doc/:unid([a-fA-F0-9]{32})", function(req, res, next) {
+    app.get("/docs/:unid([a-fA-F0-9]{32})", function(req, res, next) {
         //proper /doc call by unid
         var un = req.params.unid;
         util.getDoc(un, function(err,data){
@@ -21,6 +21,7 @@ module.exports = function (app) {
                 res.jsonp({'data':data,'error':false});
             }else{
                 res.jsonp({'error': true,'message':err});
+                console.log(err);
             }
         });
     });
